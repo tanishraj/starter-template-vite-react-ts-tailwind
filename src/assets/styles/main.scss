@@ -1,0 +1,54 @@
+@import 'variables';
+@import 'mixins';
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: $font-family;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  font-family: $font-family;
+  min-height: 100vh;
+  background-color: $quaternary;
+  color: $primary;
+  text-align: center;
+
+  /* remove when not neccessary */
+  @include flex($justify: center, $align: center, $direction: column);
+  @include list-items(0, 15px);
+}
+
+a {
+  font-weight: 500;
+  color: $tertiary;
+  text-decoration: inherit;
+  @include hover($secondary, none);
+}
+
+h1 {
+  font-size: $font-size-6;
+  line-height: $line-height-6;
+  margin: 0 0 $spacing-4;
+}
+
+button {
+  @include button;
+}
+
+#app {
+  max-width: $breakpoint-xl;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: center;
+}

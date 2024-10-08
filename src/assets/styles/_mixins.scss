@@ -1,0 +1,65 @@
+@import 'variables';
+
+@mixin flex($justify: center, $align: center, $direction: row, $wrap: wrap) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+}
+
+@mixin hover($color: $white, $bgColor: $secondary) {
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color;
+    background-color: $bgColor;
+  }
+}
+
+@mixin button(
+  $bgColor: $tertiary,
+  $textColor: $white,
+  $padding: 10px 20px,
+  $border: none,
+  $borderRadius: 4px,
+  $hoverColor: $secondary
+) {
+  background-color: $bgColor;
+  color: $textColor;
+  padding: $padding;
+  border: $border;
+  border-radius: $borderRadius;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  @include hover($white, $hoverColor);
+}
+
+@mixin input(
+  $bgColor: $white,
+  $textColor: $primary,
+  $padding: '10px 20px',
+  $border: 1px solid $primary,
+  $borderRadius: '4px'
+) {
+  background-color: $bgColor;
+  color: $textColor;
+  padding: $padding;
+  border: $border;
+  border-radius: $borderRadius;
+}
+
+@mixin list-items($padding: 10px, $margin: 0) {
+  ul {
+    list-style: none;
+    padding: $padding;
+    margin: $margin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    li {
+      margin-bottom: $padding;
+    }
+  }
+}
