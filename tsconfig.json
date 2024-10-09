@@ -1,15 +1,7 @@
 {
-  "compilerOptions": {
-    "module": "ESNext",
-    "target": "ES2015",
-    "sourceMap": true,
-
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["./src/*"]
-    }
-  },
-
-  "include": [],
-  "exclude": []
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
 }
