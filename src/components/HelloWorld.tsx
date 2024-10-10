@@ -1,6 +1,10 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
-export const HelloWorld = ({ msg }) => {
+interface HelloWorldProps {
+  msg: string;
+}
+
+export const HelloWorld = ({ msg }: HelloWorldProps) => {
   const [count, setCount] = useState(0);
   return (
     <div>
