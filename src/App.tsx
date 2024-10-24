@@ -1,7 +1,6 @@
 import { HelloWorld } from '@/components/HelloWorld';
 import ViteLogo from '@/assets/logo/vite.svg';
 import ReactLogo from '@/assets/logo/react.svg';
-import './App.scss';
 
 export const App = () => {
   return (
