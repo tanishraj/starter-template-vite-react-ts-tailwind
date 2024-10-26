@@ -10,7 +10,7 @@ export const HelloWorld = ({ msg }: HelloWorldProps) => {
     <div>
       <h1>{msg}</h1>
 
-      <div className='card'>
+      <div>
         <button type='button' onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
@@ -39,9 +39,7 @@ export const HelloWorld = ({ msg }: HelloWorldProps) => {
         </a>
         .
       </p>
-      <p className='read-the-docs'>
-        Click on the Vite and Vue logos to learn more
-      </p>
+      <p>Click on the Vite and Vue logos to learn more</p>
     </div>
   );
 };

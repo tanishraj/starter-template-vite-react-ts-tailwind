@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .flex-center {
+    @apply flex justify-center items-center flex-row flex-wrap;
+  }
+
+  .hover-effect {
+    @apply hover:text-white hover:bg-secondary focus:text-white focus:bg-secondary active:text-white active:bg-secondary;
+  }
+
+  .btn {
+    @apply bg-tertiary text-white px-4 py-2 border-none rounded cursor-pointer transition-colors duration-300 ease-in-out;
+  }
+  .btn:hover,
+  .btn:focus,
+  .btn:active {
+    @apply bg-secondary text-white;
+  }
+
+  .input {
+    @apply bg-white text-primary px-4 py-2 border border-primary rounded;
+  }
+
+  .list-items ul {
+    @apply list-none p-2 m-0 flex items-center justify-center gap-5;
+  }
+
+  .list-items ul li {
+    @apply mb-2;
+  }
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  :root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Body Styles */
+  body {
+    margin: 0;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    min-height: 100vh;
+    background-color: #eeeeee;
+    color: #151515;
+    text-align: center;
+
+    /* Flex Mixin Expanded */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  /* List Items Mixin Expanded */
+  body ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  body ul li {
+    margin-bottom: 0;
+  }
+
+  /* Anchor Styles */
+  a {
+    font-weight: 500;
+    color: #c73659;
+    text-decoration: inherit;
+  }
+
+  /* Hover Mixin Expanded for Anchors */
+  a:hover,
+  a:focus,
+  a:active {
+    color: #a91d3a;
+    background-color: none;
+  }
+
+  /* Heading Styles */
+  h1 {
+    font-size: 26px;
+    line-height: 2;
+    margin: 0 0 24px;
+  }
+
+  /* Button Mixin Expanded */
+  button {
+    background-color: #c73659;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  /* Hover Mixin Expanded for Buttons */
+  button:hover,
+  button:focus,
+  button:active {
+    color: #ffffff;
+    background-color: #a91d3a;
+  }
+
+  /* App Container Styles */
+  #app {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+    text-align: center;
+  }
+}

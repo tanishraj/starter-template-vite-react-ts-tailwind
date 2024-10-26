@@ -23,12 +23,5 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     sourcemap: true
-  },
-  css: {
-    preprocessorOptions: {
-      scss: {
-        api: 'modern-compiler'
-      }
-    }
   }
 });
