@@ -13,7 +13,6 @@ export default {
     autoprefixer: {},
 
     // Minifies CSS in production to reduce file size
-    cssnano:
-      process.env.NODE_ENV === 'production' ? { preset: 'default' } : false
-  }
+    cssnano: import.meta.env.PROD ? { preset: 'default' } : false,
+  },
 };

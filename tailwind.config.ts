@@ -9,7 +9,7 @@ export default {
         tertiary: '#c73659',
         quaternary: '#eeeeee',
         white: '#ffffff',
-        black: '#000000'
+        black: '#000000',
       },
       fontFamily: {
         sans: [
@@ -18,8 +18,8 @@ export default {
           'Avenir',
           'Helvetica',
           'Arial',
-          'sans-serif'
-        ]
+          'sans-serif',
+        ],
       },
       fontSize: {
         1: '16px',
@@ -31,13 +31,13 @@ export default {
         7: '28px',
         8: '30px',
         9: '32px',
-        10: '34px'
+        10: '34px',
       },
       fontWeight: {
         1: '400',
         2: '500',
         3: '600',
-        4: '700'
+        4: '700',
       },
       lineHeight: {
         1: '1',
@@ -45,7 +45,7 @@ export default {
         3: '1.4',
         4: '1.6',
         5: '1.8',
-        6: '2'
+        6: '2',
       },
       letterSpacing: {
         1: '0.01em',
@@ -57,14 +57,14 @@ export default {
         7: '0.07em',
         8: '0.08em',
         9: '0.09em',
-        10: '0.1em'
+        10: '0.1em',
       },
       screens: {
         xs: '320px',
         sm: '576px',
         md: '768px',
         lg: '992px',
-        xl: '1200px'
+        xl: '1200px',
       },
       zIndex: {
         1: '1',
@@ -74,7 +74,7 @@ export default {
         5: '5',
         6: '6',
         7: '7',
-        8: '8'
+        8: '8',
       },
       spacing: {
         1: '4px',
@@ -86,20 +86,20 @@ export default {
         7: '48px',
         8: '56px',
         9: '64px',
-        10: '72px'
+        10: '72px',
       },
       boxShadow: {
         1: '0 2px 4px rgba(0, 0, 0, 0.1)',
         2: '0 4px 8px rgba(0, 0, 0, 0.1)',
         3: '0 6px 12px rgba(0, 0, 0, 0.1)',
-        4: '0 8px 16px rgba(0, 0, 0, 0.1)'
+        4: '0 8px 16px rgba(0, 0, 0, 0.1)',
       },
       borderRadius: {
         1: '4px',
         2: '8px',
         3: '12px',
         4: '16px',
-        5: '20px'
+        5: '20px',
       },
       opacity: {
         10: '0.1',
@@ -108,21 +108,21 @@ export default {
         40: '0.4',
         50: '0.5',
         60: '0.6',
-        70: '0.7'
+        70: '0.7',
       },
       transitionDuration: {
         1: '200ms',
         2: '300ms',
         3: '400ms',
-        4: '500ms'
+        4: '500ms',
       },
       transitionTimingFunction: {
-        DEFAULT: 'ease-in-out'
+        DEFAULT: 'ease-in-out',
       },
       transitionProperty: {
-        DEFAULT: 'all'
-      }
-    }
+        DEFAULT: 'all',
+      },
+    },
   },
-  plugins: []
+  plugins: [],
 };

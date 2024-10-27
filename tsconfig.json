@@ -27,9 +27,13 @@
       "@/*": ["*"]
     }
   },
-  "include": ["src", "*.ts", "*.tsx", "*.d.ts"],
-  "exclude": [
-    "coverage",
-    "dist",
-    "node_modules"]
+  "include": [
+    "src",
+    "*.ts",
+    "*.tsx",
+    "*.d.ts",
+    "eslint.config.ts",
+    "tailwind.config.ts"
+  ],
+  "exclude": ["coverage", "dist", "node_modules", "config", "vite.config.js"]
 }

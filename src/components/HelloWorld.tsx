@@ -6,12 +6,13 @@ interface HelloWorldProps {
 
 export const HelloWorld = ({ msg }: HelloWorldProps) => {
   const [count, setCount] = useState(0);
+
   return (
     <div>
       <h1>{msg}</h1>
 
       <div>
-        <button type='button' onClick={() => setCount((count) => count + 1)}>
+        <button type='button' onClick={() => setCount(count => count + 1)}>
           count is {count}
         </button>
         <ul>
@@ -26,14 +27,14 @@ export const HelloWorld = ({ msg }: HelloWorldProps) => {
       </p>
 
       <p>
-        Check out {''}
+        Check out
         <a href='https://vitejs.dev/guide/' target='_blank'>
           create-react
         </a>
         , the official React + Vite starter
       </p>
       <p>
-        Learn more about IDE Support for Vue in the {''}
+        Learn more about IDE Support for Vue in the
         <a href='https://react.dev/learn' target='_blank'>
           React Docs Scaling up Guide
         </a>
