@@ -21,20 +21,19 @@ export const HelloWorld = ({ msg }: HelloWorldProps) => {
         </ul>
       </div>
       <p>
-        Edit
-        <code>components/HelloWorld.jsx</code> to test HMR (Hot Module
+        Edit <code>components/HelloWorld.jsx</code> to test HMR (Hot Module
         Replacement)
       </p>
 
       <p>
-        Check out
+        Check out{' '}
         <a href='https://vitejs.dev/guide/' target='_blank'>
           create-react
         </a>
         , the official React + Vite starter
       </p>
       <p>
-        Learn more about IDE Support for Vue in the
+        Learn more about IDE Support for Vue in the{' '}
         <a href='https://react.dev/learn' target='_blank'>
           React Docs Scaling up Guide
         </a>
