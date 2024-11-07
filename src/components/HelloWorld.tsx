@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 interface HelloWorldProps {
   msg: string;
@@ -16,8 +17,13 @@ export const HelloWorld = ({ msg }: HelloWorldProps) => {
           count is {count}
         </button>
         <ul>
-          <li>{/* <RouterLink to='/'>Home</RouterLink> */}</li>
-          <li>{/* <RouterLink to='/about'>About</RouterLink> */}</li>
+          <li>
+            {' '}
+            <Link to='/'>Home</Link>
+          </li>
+          <li>
+            <Link to='/about'>About</Link>
+          </li>
         </ul>
       </div>
       <p>
