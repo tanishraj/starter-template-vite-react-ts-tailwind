@@ -1,0 +1,11 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Semantic Color */
+  --color-primary: '#151515';
+  --color-secondary: '#a91d3a';
+  --color-tertiary: '#c73659';
+  --color-quaternary: '#eeeeee';
+  --color-white: '#ffffff';
+  --color-black: '#000000';
+}
